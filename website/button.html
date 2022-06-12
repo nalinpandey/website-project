@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+  padding-top: 50px;
+}
+
+
+
+form #decrease {
+  margin-right: -4px;
+  border-radius: 8px 0 0 8px;
+}
+
+form #increase {
+  margin-left: -4px;
+  border-radius: 0 8px 8px 0;
+}
+
+form #input-wrap {
+  margin: 0px;
+  padding: 0px;
+}
+
+input#number {
+  text-align: center;
+  border: none;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+#box {
+    text-align: center;
+    background-image: url("bg2.png");
+    background-size:cover;
+    padding: 105px;
+    border: 10px solid rgb(103, 67, 67);
+    margin: 21px;
+    height: 600px;
+    width: 500px;
+    color: white;
+}
+body{
+    background-image: url("bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.center {
+  margin: auto;
+  width: 40%;
+  padding: 10px;
+  display: flex;
+}
+</style>
+<body class="center">
+    <div id="box">
+    <h1 style="text-align: center;">Cart</h1>
+    <form action="payment.php" method="post">
+        <label for="item"><h2>Mention the item you want to order:</h2></label>
+        <select name="orderlist">
+            <option value="expresso">Expresso</option>
+            <option value="dappio">Dappio</option>
+            <option value="darjeeling">Darjeeling cha</option>
+            <option value="masalacha">Masala cha</option>
+            <option value="iced">Iced coffee</option>
+            <option value="Peurh">Puerh cha</option>
+            <option value="Maghrebi">Maghrebi cha</option>
+            <option value="blacktea">Black cha</option>
+            <option value="longblack">Long Black</option>
+            <option value="Specialtea">Special Tea</option>
+        </select><br><br>
+        <label for="quantity">Quantity:</label>
+        <input type="number" name="quantity"/><br><br>
+        <div id="bold">
+        <label style="text-align: justify;" for="item">Name:</label>
+            <input type="text" name="name"/><br><br>
+            <label style="text-align: justify;" for="item">Contact no:</h2></label>
+            <input type="number" name="contact_no"/><br><br>
+            <label style="text-align: justify;" for="item">Address:</h2></label>
+            <textarea name="message" rows="10" cols="30"></textarea>
+  <br><br>
+            <label style="text-align: justify;" for="item">Pincode:</h2></label>
+            <input type="number" name="pincode"/><br><br>
+            <label style="text-align: justify;" for="item">Price of each item:</h2></label>
+            <input type="text", value="100" readonly>
+            <input type="submit" name="Submit"/>
+      </form>
+    </div>
+</body>
+</html>

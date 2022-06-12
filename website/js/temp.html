@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Priority between internal, external and inline CSS.</title>
+        <link rel="stylesheet" href="styles/index.css" />
+        <style>
+            /* TODO: Write the style for the class: internal. The color of the text should be red */
+            .internal{
+                color: red;
+            }
+            #line1{
+                color: purple;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- TODO: Write the inline style. The color of the text should be purple -->
+        <p id="line1">This paragraph is styled inline.</p>
+
+        <p id="line2" class="internal">This paragraph is styled using internal CSS in the head.</p>
+
+        <p id="line3" class="external">This paragraph is styled using extenal CSS file.</p>
+
+        <p id="line4" class="external internal">This paragraph has both internal and external styles attached to it. But, it gives more priority to the internal CSS.</p>
+
+        <!-- TODO: Also, write the inline style. The color of the text should be purple -->
+        <p id="line5" class="external internal">This paragraph has all the three styles - inline, internal and external styles attached to it. But, it gives more priority to the inline CSS.</p>
+    </body>
+</html>

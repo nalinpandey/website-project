@@ -1,0 +1,38 @@
+#box {
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 105px;
+    border: 20px solid rebeccapurple;
+    margin: 21px;
+    height: 600px;
+    width: 500px;
+}
+#bold{
+    font-size: larger;
+}
+#body{
+    background-color: burlywood;
+    background-image: url("bg.png");
+    background-size: cover;
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+  }
+a:hover{
+    border: 1px solid black;
+    width: 60px;
+    background-color: red;
+    
+}
+h1{
+        text-align: center;
+        font-size: 79px;
+        margin-left: 20px;
+        color: white;
+}
+#icetea{
+    background-color: burlywood;
+    background-image: url("icetea.png");
+    background-size: cover;
+}
